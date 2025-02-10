@@ -1,0 +1,775 @@
+@media (max-width: 425px) {
+
+    /** utility classes **/
+    .padding {
+        padding-inline: 25px;
+    }
+
+    .page1 {
+        max-width: 425px;
+        min-height: 100vh;
+        background-color: #111;
+    }
+
+    .page1 .nav {
+        max-width: 425px;
+        height: 80px;
+        justify-content: space-between;
+    }
+
+    .page1 .nav svg {
+        width: 8.6em;
+    }
+
+    .page1 .nav svg path {
+        fill: #fff;
+    }
+
+    .page1 .nav .nav-content {
+        gap: 40px;
+    }
+
+    .page1 .nav .nav-content h2 {
+        display: none
+    }
+
+    .page1 .nav .nav-content .btn {
+        width: 40px;
+        height: 40px;
+        background-color: #0DA34E;
+        border-radius: 50px;
+        margin-left: 15px;
+        transition: all ease-in-out 0.4s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .page1 .nav .nav-content .btn::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #f5f0f0;
+        transition: all ease-in 0.3s;
+    }
+
+    .page1 .nav .nav-content .btn:hover::after {
+        height: 100%;
+        top: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .page1 .nav .nav-content .btn:hover h3,
+    .page1 .nav .nav-content .btn:hover i {
+        color: #0DA34E;
+    }
+
+    .page1 .nav .nav-content .btn h3 {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-wrap: nowrap;
+        transition: all ease-in-out 0.3s;
+        position: relative;
+        z-index: 99;
+        display: none;
+    }
+
+    .page1 .nav .nav-content .btn i {
+        transition: all ease-in-out 0.3s;
+        position: relative;
+        z-index: 99;
+        font-size: 1.2rem;
+    }
+
+    /** page1 content **/
+
+    .page1 .page1-content {
+        max-width: 425px;
+        flex-direction: column;
+        margin-top: 3.5rem;
+        align-items: flex-start;
+    }
+
+    .page1 .page1-content h3 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .page1 .page1-content h1 {
+        font-size: 3rem;
+        letter-spacing: -2px;
+        display: inline-block;
+        overflow-y: hidden;
+        line-height: 1.1;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .page1 .page1-content h1 span {
+        display: inline-block;
+    }
+
+    .page1 .page1-content h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2;
+        width: 100%;
+    }
+
+    .page1 .page1-content h2 span {
+        color: #0ca64f;
+        padding-inline: 5px;
+        font-size: 1.14rem;
+    }
+
+    /** page1 video **/
+    .page1 .page1-video {
+        width: 100%;
+        height: 435px;
+        margin-top: 4rem;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative !important;
+    }
+
+    .page1 .page1-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .page1 .page1-video .circle {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-color: #23ae5f;
+        padding-inline: 35px;
+        flex-direction: column;
+        gap: 45px;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .page1 .page1-video .circle i {
+        align-self: flex-start;
+        font-size: 1.5rem;
+    }
+
+    /** page2 **/
+    .page2 {
+        max-width: 425px;
+        min-height: 100vh;
+        background-color: #111;
+        padding-top: 2rem;
+    }
+
+    /** section1 **/
+
+    .page2 .section1 {
+        width: 100%;
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .page2 .section1 .box {
+        background-color: #1f1f1f;
+        width: 100%;
+        height: 235px;
+        border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .page2 .section1 .box video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .page2 .section1 .box .box-content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 30px 15px 30px 25px !important;
+        transition: all ease-in-out 0.2s;
+        background-color: #1f1f1f;
+    }
+
+    .page2 .section1 .box .box-content h4 {
+        font-size: 0.8rem;
+        color: #5f5d5d;
+        align-self: flex-end;
+        text-wrap: nowrap;
+    }
+
+    .page2 .section1 .box .box-content .content h2 {
+        font-size: 3.2rem;
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    .page2 .section1 .box .box-content .content h3 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #ffffff9a;
+        letter-spacing: -0.5px;
+    }
+
+    .page2 .section1 .div4 .box-content .content h3,
+    .page2 .section1 .div5 .box-content .content h3 {
+        width: 90%;
+    }
+
+    .page2 .section1 .div4 .box-content .content h2,
+    .page2 .section1 .div5 .box-content .content h2 {
+        font-size: 2.4rem;
+    }
+
+    /** section2 **/
+    .page2 .section2 {
+        width: 100%;
+        height: 62vh;
+        margin-top: 6.5rem;
+        position: relative;
+    }
+
+    .page2 .section2 .img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .page2 .section2 .img img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .page2 .section2 .section2-content {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #0000003c;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 25px;
+        gap: 30px;
+    }
+
+    .page2 .section2 .section2-content h2 {
+        font-size: 2.7rem;
+        letter-spacing: -2px;
+        width: 100%;
+        line-height: 1.1;
+        text-align: left;
+    }
+
+    .page2 .section2 .section2-content>h3 {
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100%;
+        line-height: 1.4;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .page2 .section2 .section2-content h4 {
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100%;
+        line-height: 1.4;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+
+    .page2 .section2 .section2-content .btn2 h3 {
+        color: #000;
+        font-size: 0.82rem;
+        font-weight: 600;
+        position: relative;
+        z-index: 99;
+        transition: all ease-in-out 0.3s;
+    }
+
+    /** section3 **/
+    .page2 .section3 {
+        width: 100%;
+        margin: 6.5rem 0 6rem 0;
+    }
+
+    .page2 .section3 h2 {
+        font-size: 2.9rem;
+        text-transform: capitalize;
+        letter-spacing: -0.2px;
+        margin-bottom: 30px;
+    }
+
+    .page2 .section3 p {
+        font-size: 1.25rem;
+        line-height: 1.3;
+    }
+
+    .page2 .section3 .ad-section {
+        width: 100%;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .page2 .section3 .ad-section .sec {
+        width: 100%;
+    }
+
+    .page2 .section3 .ad-section .sec svg {
+        width: 11rem;
+        margin-bottom: 5px;
+    }
+
+    .page2 .section3 .ad-section .sec img {
+        width: 11rem;
+        margin-bottom: 5px;
+    }
+
+    .page2 .section3 .btn3 {
+        height: 60px;
+        background-color: #4f5bff;
+        width: 350px;
+        margin-top: 4.5rem;
+        border-radius: 50px;
+        gap: 12px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .page2 .section3 .btn3 h3 {
+        font-size: 0.9rem;
+        transition: all ease-in-out 0.35s;
+        position: relative;
+        z-index: 99;
+        font-weight: 600;
+    }
+
+    .page2 .section3 .btn3 i {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    /** section4 **/
+    .page2 .section4 {
+        width: 100%;
+        background-color: #fff;
+        padding-top: 5.4rem;
+        padding-bottom: 4rem;
+    }
+
+    .page2 .section4 .success {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+    }
+
+    .page2 .section4 .success h1 {
+        color: #000;
+        width: 100%;
+        font-size: 2.8rem;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+    }
+
+    .page2 .section4 .success .partnership {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .page2 .section4 .success .partnership h3 {
+        font-size: 0.98rem;
+        color: #a3a3a3;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .page2 .section4 .success .partnership p {
+        font-size: 1.35rem;
+        color: #000;
+        font-weight: 400;
+        letter-spacing: -0.8px;
+        line-height: 1.35;
+        width: 100%;
+    }
+
+    .page2 .section4 .success .partnership .space {
+        margin-bottom: 50px;
+    }
+
+    /** boxes **/
+    .page2 .section4 .boxes {
+        width: 100%;
+        gap: 6;
+        flex-direction: column;
+        border-radius: 25px;
+    }
+
+    .section4 .boxes .div {
+        width: 100%;
+        height: 220px;
+        background-color: #f5f5f5;
+        border-radius: 6px;
+        padding: 35px 30px;
+    }
+
+    .section4 .boxes .div .million h2 {
+        font-size: 2.9rem;
+        color: #000;
+        margin-bottom: 40px;
+    }
+
+    .section4 .boxes .div .funding {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .section4 .boxes .div .funding h4 {
+        font-size: 0.85rem;
+        color: #00000077;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+
+    .section4 .boxes .div .funding h4:nth-child(1) {
+        width: 50%;
+    }
+
+    /** page3 **/
+    .page3 {
+        max-width: 425px;
+        min-height: 100vh;
+        background-color: #111;
+        padding-top: 8.5rem;
+        padding-bottom: 5rem;
+    }
+
+    .page3>h2 {
+        font-size: 2.9rem;
+        letter-spacing: -2px;
+        width: 100%;
+        line-height: 1;
+        margin-bottom: 35px;
+        font-weight: 500;
+    }
+
+    .page3>p {
+        font-size: 1.25rem;
+        width: 100%;
+        line-height: 1.25;
+        margin-bottom: 60px;
+        letter-spacing: -0.5px;
+    }
+
+    .page3 .section1 {
+        width: 100%;
+        border-top: 0.8px solid #383838;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page3 .section1 .cases {
+        width: 100%;
+        position: sticky;
+        height: auto;
+        top: 150px;
+    }
+
+    .page3 .section1 .cases .option {
+        width: 80%;
+        margin-bottom: 3.5rem;
+    }
+
+    .page3 .section1 .cases .option h4 {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 0.76rem;
+        text-transform: uppercase;
+        padding-block: 5px;
+        border-bottom: 0.8px solid #383838cd;
+        transition: all ease-in-out 0.35s;
+        padding-inline: 2px;
+    }
+
+    .page3 .section1 .cases .option h4:hover,
+    .page3 .section1 .cases .option h4:hover span {
+        color: #0DA34E;
+    }
+
+    .page3 .section1 .cases .option h4 span {
+        transition: all ease-in-out 0.35s;
+    }
+
+    .page3 .section1 .cases button {
+        height: 60px;
+        width: 80%;
+        background-color: #4f5bff;
+        border-radius: 50px;
+        border: 0;
+        position: relative;
+        transition: all ease-in-out 0.3s;
+        overflow: hidden;
+        margin-bottom: 3rem;
+    }
+
+    .page3 .section1 .cases button h3 {
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 99;
+        transition: all ease-in-out 0.35s;
+        gap: 15px;
+    }
+
+    .page3 .section1 .cases button h3 i {
+        font-size: 1.5rem;
+    }
+
+    .page3 .section1 .design {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page3 .section1 .design .img {
+        padding-top: 30px;
+        width: 100%;
+        margin-block: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .page3 .section1 .design .img h2 {
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 2.8rem;
+    }
+
+    .page3 .section1 .design .img p {
+        text-transform: capitalize;
+        font-size: 1rem;
+        line-height: 1.3;
+        margin-bottom: 1.4rem;
+        opacity: 0.6;
+    }
+
+    .page3 .section1 .design .img2 p {
+        margin-top: 2.8rem;
+    }
+
+    .page3 .section1 .design .img .play {
+        width: 420px;
+        height: 250px;
+        overflow: hidden;
+        transition: all ease-in-out 0.25s;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    /** section2 **/
+    .page3 .section2 {
+        width: 100%;
+        margin-top: 8.5rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #ffffff46;
+    }
+
+    .page3 .section2 .digital {
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .page3 .section2 .digital .button {
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+
+    .page3 .section2 .digital .button button {
+        width: 100%;
+        height: 60px;
+        border: 0;
+        gap: 15px;
+        border-radius: 50px;
+        background-color: #0ca64f;
+        position: relative;
+        overflow: hidden;
+        margin-top: 1.8rem;
+    }
+
+    .page3 .section2 .digital .button button::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #ffffff;
+        transition: all ease-in 0.3s;
+    }
+
+    .page3 .section2 .digital .button button:hover::after {
+        height: 100%;
+        top: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .page3 .section2 .digital .button button:hover h3,
+    .page3 .section2 .digital .button button:hover i {
+        color: #0ca64f;
+    }
+
+    .page3 .section2 .digital .button button h3 {
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        color: #fff;
+        position: relative;
+        transition: all ease-in-out 0.35s;
+        z-index: 99;
+    }
+
+    .page3 .section2 .digital .button button i {
+        font-size: 1.5rem;
+        color: #fff;
+        position: relative;
+        transition: all ease-in-out 0.35s;
+        z-index: 99;
+    }
+
+    .page3 .section2 .digital .product {
+        width: 100%;
+    }
+
+    .page3 .section2 .digital .product h2 {
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+        width: 100%;
+        margin-bottom: 3.3rem;
+    }
+
+    .page3 .section2 .digital .product p {
+        font-size: 1.8rem;
+        line-height: 1.14;
+        letter-spacing: -0.5px;
+        width: 100%;
+        margin-bottom: 5.5rem;
+    }
+
+    /** website **/
+    .page3 .section2 .ui-ux {
+        width: 100%;
+    }
+
+    .page3 .section2 .ui-ux .set {
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid #ffffff42;
+        margin-bottom: 50px;
+    }
+
+    .page3 .section2 .ui-ux .set .services {
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .page3 .section2 .ui-ux .set .services h2 {
+        font-size: 2rem;
+    }
+
+    .page3 .section2 .ui-ux .set .services i {
+        font-size: 1.1rem;
+        border: 1px solid #ffffff4f;
+        padding: 12px;
+        border-radius: 50%;
+        transition: all ease-in-out 0.2s;
+    }
+
+    .page3 .section2 .ui-ux .set h3 {
+        align-items: flex-start;
+    }
+
+    .page3 .section2 .ui-ux .set h3 span {
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        padding: 8px 16px;
+        border: 1px solid #ffffff52;
+        border-radius: 50px;
+        transition: all ease-in-out 0.2s;
+    }
+
+    .page3 .section2 .ui-ux .set h3 span:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .page3 .section2 .ui-ux .set .website {
+        width: 100%;
+        margin-top: 55px;
+        display: none;
+    }
+
+    .page3 .section2 .ui-ux .set .website .web p {
+        font-size: 0.85rem;
+        font-weight: 400;
+        width: 60%;
+        position: relative;
+        z-index: 99;
+    }
+
+    .page3 .section2 .ui-ux .set .website .web h3 {
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        font-weight: 200;
+        letter-spacing: -0.5px;
+        position: relative;
+        z-index: 99;
+    }
+
+    .page3 .section2 .ui-ux .set .website .web p {
+        font-size: 0.85rem;
+        font-weight: 400;
+        width: 60%;
+        position: relative;
+        z-index: 99;
+    }
+}
